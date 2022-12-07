@@ -5,9 +5,8 @@ library(googlesheets4)
 # No need for authentication
 gs4_deauth()
 
-data <- read_sheet("https://docs.google.com/spreadsheets/d/1_QY-l4xhMu5nZVluprOgRs6rUzgkkBemapdsg5lFzKU/pub?output=xlsx")%>% 
-  dplyr::select(-c(49)) %>% clean_names()
-
+data <- read_sheet("https://docs.google.com/spreadsheets/d/1_QY-l4xhMu5nZVluprOgRs6rUzgkkBemapdsg5lFzKU/pub?output=xlsx") 
+  
 # November 28, 2022
 no_of_rows <- data %>% nrow()
 
