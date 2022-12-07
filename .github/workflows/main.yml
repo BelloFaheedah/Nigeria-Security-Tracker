@@ -1,7 +1,7 @@
 on:
   schedule:
     # * download at 12am everyday
-    - cron:  "0 0 * * *"
+    - cron:  "12 17 * * *"
   
 name: download-event-schedule
 
