@@ -7,7 +7,7 @@ gs4_deauth()
 
 data <- read_sheet("https://docs.google.com/spreadsheets/d/1_QY-l4xhMu5nZVluprOgRs6rUzgkkBemapdsg5lFzKU/pub?output=xlsx", col_types = "cDcccncccccccccnnnnnnnnnnnncccccccccccccccccnnccc") %>%
   dplyr::select(-c(49)) %>%
-  clean_names() %>%
+  clean_names()
   
 # November 28, 2022
 no_of_rows <- data %>% nrow()
